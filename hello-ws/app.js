@@ -34,6 +34,10 @@ let count = 0;
 // 如何真正创建WebSocket并且给服务器发消息呢？方法是在浏览器中写JavaScript代码
 // 打开一个WebSocket:
 let ws = new WebSocket('ws://localhost:3000/ws/chat');
+// var localpath = (window.location.href).substring(6); 
+// var ws = new WebSocket('ws://'+localpath+'ws/chat');
+// let ws = new WebSocket('ws://${location.hostname}:3000/ws/chat');
+
 // 给服务器发送一个字符串:
 ws.on('open', function () {
     console.log(`[CLIENT] open()`);

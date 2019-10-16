@@ -3,7 +3,7 @@ const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
 const router = require('koa-router')(); // 注意require('koa-router')返回的是函数
 
-const app = new  Koa();
+const app = new Koa();
 
 // log request URL
 app.use(async (ctx, next) => {
