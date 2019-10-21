@@ -36,3 +36,5 @@ app.use(controller());
 
 app.listen(3000);
 console.log('app started at port 3000...');
+// http://localhost:3000/static/index.html
+
