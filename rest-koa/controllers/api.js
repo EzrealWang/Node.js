@@ -1,7 +1,7 @@
 const products = require('../products');
 
 const APIError = require('../rest').APIError;
-
+// 该API支持GET、POST和DELETE这三个请求. 当然，还可以添加更多的API
 module.exports = {
     'GET /api/products': async (ctx, next) => {
         ctx.rest({

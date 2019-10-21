@@ -1,5 +1,6 @@
 // store products as database:
-
+// 为了操作Product，我们用products.js封装所有操作，可以把它视为一个Service
+// 变量products相当于在内存中模拟了数据库，这里是为了简化逻辑
 var id = 0;
 
 function nextId() {
