@@ -130,12 +130,13 @@ $(function () {
                 this.selectedColIndex = cell.col;
             },
             change: function (e) {
+                // change事件传入的e是DOM事件
                 var
                     rowIndex = this.selectedRowIndex,
                     colIndex = this.selectedColIndex,
                     text;
                 if (rowIndex > 0 && colIndex > 0) {
-                    text = e.target.innerText;
+                    text = e.target.innerText; // 获取td的innerText
                     this.rows[rowIndex - 1][colIndex].text = text;
                 }
             }
@@ -154,7 +155,7 @@ $(function () {
             cell.align = align;
         }
     };
-
+    // 给按钮绑定事件:
     $('#cmd-open').click(function () {
         vm.open();
     });
